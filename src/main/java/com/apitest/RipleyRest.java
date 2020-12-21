@@ -16,7 +16,7 @@ public class RipleyRest {
 	
 
 	//@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "https://modest-hodgkin-23c7b1.netlify.app/")
+	@CrossOrigin(origins = "https://wizardly-mirzakhani-ad4a1b.netlify.app/")
 	@PostMapping("/saldo")
 	public PersonaRipley personaRipley(@RequestParam String rut) {
 		
