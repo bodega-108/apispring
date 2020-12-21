@@ -16,7 +16,7 @@ public class RipleyRest {
 	
 
 	//@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "https://wizardly-mirzakhani-ad4a1b.netlify.app/")
+	@CrossOrigin(origins = "https://wizardly-mirzakhani-ad4a1b.netlify.app")
 	@PostMapping("/saldo")
 	public PersonaRipley personaRipley(@RequestParam String rut) {
 		
@@ -27,7 +27,6 @@ public class RipleyRest {
 		
 		//Generar Saldo
 		double saldo = persona_dao.saldo();
-		
 		//Generar Fecha de nacimiento
 		String fecha = persona_dao.fechaNacimiento();
 		
