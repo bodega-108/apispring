@@ -15,7 +15,8 @@ import com.apitest.model.PersonaRipley;
 public class RipleyRest {
 	
 
-	@CrossOrigin(origins = "http://localhost:3000")
+	//@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "https://modest-hodgkin-23c7b1.netlify.app/")
 	@PostMapping("/saldo")
 	public PersonaRipley personaRipley(@RequestParam String rut) {
 		
