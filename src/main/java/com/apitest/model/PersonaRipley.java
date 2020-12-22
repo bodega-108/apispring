@@ -5,8 +5,9 @@ public class PersonaRipley {
 	private String nombre;
 	private String apellido;
 	private String rut;
-	private double saldo;
+	
 	private String fechaNacimiento;
+	private String ruts;
 	
 	public String getFechaNacimiento() {
 		return fechaNacimiento;
@@ -32,16 +33,17 @@ public class PersonaRipley {
 	public void setRut(String rut) {
 		this.rut = rut;
 	}
-	public double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-	public String nombreCompleto() {
+
+	
+	public void Empleado(String nombre,String apellido, String rut,String fechaNacimiento) {
 		
-		String nombre_completo = this.nombre + " " + this.apellido;
-		return nombre_completo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.rut=rut;
+		this.fechaNacimiento = fechaNacimiento;
+		
 	}
+	
+
 	
 }
